@@ -1,8 +1,62 @@
-git clone https://github.com/cchcloud001/iotwebsite.git
-cd iotwebsite
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart IoT Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-# Save the index.html file inside this folder
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Smart IoT Solutions</h1>
+    <p class="text-xl mb-6">Innovative, reliable, and affordable IoT products for your connected future.</p>
+    <a href="#products" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">Explore Products</a>
+  </section>
 
-git add index.html
-git commit -m "Add homepage"
-git push origin main
+  <!-- Products Section -->
+  <section id="products" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Smart Plug</h3>
+        <p>Monitor and control your devices with real-time energy usage insights.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">GPS Asset Tracker</h3>
+        <p>Track valuable assets in real time with cellular and GPS technology.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Fire & Smoke Detector</h3>
+        <p>Early warning system with IoT notifications for fire and smoke detection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p>We’re a team of engineers and innovators developing practical and reliable IoT products for smarter homes and industries. Our mission is to make advanced technology accessible and easy to use.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
+    <form class="bg-white p-8 rounded-lg shadow-md space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border px-4 py-2 rounded"/>
+      <input type="email" placeholder="Your Email" class="w-full border px-4 py-2 rounded"/>
+      <textarea placeholder="Your Message" class="w-full border px-4 py-2 rounded h-32"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Smart IoT Products. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
